@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoon Style Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="profile/1.svg" alt="User" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Ziheng (Jack) Chen">Ziheng (Jack) Chen</h1>
+          <p class="title">Computer Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+        </button>
+      </div>
+      <div class="sidebar-info_more" data-sidebar-more>
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:zihengchen2000@gmail.com" class="contact-link">zihengchen2000@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>US Permanent Resident</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="zihengjackchen.com" class="social-link">
+              <i class="fab fa-github"></i> 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Work Experience</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <h2>👋 Hi, I'm Ziheng (Jack) Chen</h2>
+          <p>Ziheng (Jack) Chen is a highly skilled computer engineer with a strong academic background and extensive experience in software engineering, data engineering, and site reliability engineering. He has demonstrated expertise in optimizing system performance, developing innovative solutions for data processing, and enhancing system visibility. His technical skills span across programming languages, cloud infrastructure, machine learning, and web development.</p>
+        </section>
+      </article>
+
+      <article class="education" data-page="education">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="book-outline"></ion-icon> Education
+          </h2>
+        </header>
+        <section class="timeline">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Illinois Urbana-Champaign (UIUC)</h4>
+              <span>Expected May 2025</span>
+              <p class="timeline-text">Master of Science in Computer Engineering</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Illinois Urbana-Champaign (UIUC)</h4>
+              <span>May 2023</span>
+              <p class="timeline-text">Bachelor of Science in Computer Engineering</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="work-experience" data-page="work experience">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="briefcase-outline"></ion-icon> Work Experience
+          </h2>
+        </header>
+        <section class="timeline">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Site Reliability Engineer Intern - Talos Trading</h4>
+              <span>June 2024 – Aug 2024</span>
+              <p class="timeline-text">Improved system stability using Python by provisioning upgraded hardware in GCP based on past usage metrics, boosting performance by 50% and reducing costs by 25%, saving $100K monthly. Designed an interactive TypeScript and Node.js webpage to visualize GCP infrastructure and market data connections. Integrated Datadog API with Flask, enhancing system visibility and reducing troubleshooting time by 2 hours daily. Optimized order reconciliation workflows by configuring Cloud Composer in GCP using Terraform and integrating BigQuery, centralizing proactive business alerts and uncovering a potential $1.5M annual cost increase. Automated market data failover and remote log retrieval with Bash scripts in Octopus Deploy, reducing downtime by 30%. Integrated validation checks into the release pipeline with Datadog alerts, reducing deployment time by 2 hours. Implemented YAML linting with GitHub Actions in submodules, reducing configuration errors by 30%. Traced logs across platform components in Linux using Postgres, conducting root cause analysis on cross-functional issues.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer Intern (co-op) - StoneX Group</h4>
+              <span>Jan 2023 – June 2023</span>
+              <p class="timeline-text">Built a pipeline using Python and pandas to benchmark commodity futures indices with 200+ configurations. Identified the optimal configuration, surpassing 10-year return performance targets by 23.3%. Devised a system for version-controlling Databricks data processing tasks, reducing deployment errors by 25%. Developed a CI/CD pipeline in Azure DevOps to migrate Databricks notebooks and jobs to production using REST APIs, validated through edge-case testing of workload status, properties, and parameters.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Engineer Intern (co-op) - StoneX Group</h4>
+              <span>Aug 2022 – Dec 2022</span>
+              <p class="timeline-text">Integrated Okta authentication into a Streamlit webpage via an Envoy Proxy microservice, using bearer tokens for user-specific access control, eliminating unauthorized access. Designed a Splunk dashboard to track real-time usage by user group, identifying popular content for prioritization. Streamlined the data curation ETL pipeline by migrating from Apache Airflow to a scheduled Databricks workflow, leveraging Azure Blob Storage for staging data and reducing load times from 150 seconds to 5 seconds.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Engineer Intern - Ecolab</h4>
+              <span>May 2022 – July 2022</span>
+              <p class="timeline-text">Profiled Snowflake tables using JinjaSQL to identify key statistics, outliers, and trends, boosting data integrity. Processed 19,300 hours of dishwasher service logs from Snowflake using Azure Cognitive Services, identified six root causes, and guided improvements for future product revisions.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="projects" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="code-outline"></ion-icon> Projects
+          </h2>
+        </header>
+        <section class="timeline">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">GPU Failure Analysis in Delta Supercomputer</h4>
+              <span>Mar 2024 – Present</span>
+              <p class="timeline-text">Pre-processed 6B+ Delta Supercomputer log lines, removing noise through error deduplication and keyword matching. Boosted processing speed by 100x using Hyperscan and Python multiprocessing for error extraction. Analyzed NVIDIA GPU failure modes for AI workloads, uncovered error propagation paths that impacted 361K user jobs.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Traffic Risk Assessment and Mitigation</h4>
+              <span>Aug 2023 – Feb 2024</span>
+              <p class="timeline-text">Developed a novel traffic risk assessment method to enhance AV resiliency in unfamiliar, accident-prone scenarios. Simulated 6,000 scenarios from NHTSA pre-crash typologies and trained lightweight Double DQN Reinforcement Learning Agents in PyTorch to preemptively brake using traffic risk as an indicator, reducing accidents by 72.7%.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    // Toggle sidebar contacts
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+    const sidebarMore = document.querySelector("[data-sidebar-more]");
+
+    sidebarBtn.addEventListener("click", function () {
+      sidebarMore.classList.toggle("active");
+      sidebarBtn.querySelector("span").textContent = sidebarMore.classList.contains("active") ? "Hide Contacts" : "Show Contacts";
+    });
+
+    // Handle navigation links
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
+
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navigationLinks.forEach(navLink => navLink.classList.remove("active"));
+        this.classList.add("active");
+
+        const pageName = this.textContent.toLowerCase().trim();
+        pages.forEach(page => page.classList.remove("active"));
+        const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+        if (targetPage) {
+          targetPage.classList.add("active");
+          window.scrollTo(0, 0);
+        }
+      });
+    });
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
